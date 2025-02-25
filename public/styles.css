@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+/* Logo Container */
+.logo_container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo_container img {
+    max-width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+/* Title Styles */
+.title_container h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+/* Form Container */
+.input_container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select, button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select:focus, button:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table Styling */
+.table_container {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Result Section */
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .input_container, .table_container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    select, button {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    th, td {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .logo_container img {
+        max-width: 120px;
+    }
+
+    .title_container h1 {
+        font-size: 2em;
+    }
+}

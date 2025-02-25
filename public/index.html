@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo_container">
+        <img src="../assets/hilcoe-Logo.png" alt="Hilcoe-Logo">
+
+    </div>
+    <div class="title_container">
+        <h1>GPA Calculator</h1>
+    </div>
+    <div lass="input_container">
+        <label for="major">Major:</label>
+            <select id="major" name="major">
+                <option value="computer-science">Computer Science</option>
+                <option value="business">Softwar Engineering</option>
+            </select><br><br>
+    </div>
+    <div class="input_container">
+            
+
+            <label for="courses">Courses:</label>
+            <select name="courses" id="courses">
+                <option value="" disabled selected>Select a Course</option>
+            </select>
+            <label for="credit_hour">Creadit Hour:</label>
+            <select name="credit_hour" id="credit_hour">
+                <option value="" disabled selected>Select a Credit Hour</option>
+            </select>
+        
+            <label for="grade">Grade:</label>
+            <select name="grade" id="grade">
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+
+            <button onclick="addToTable()" id="grade_add_btn">ADD</button>
+            <button onclick="calculateGPA()">Calculate GPA</button>
+    </div>
+    <br><br>
+   
+    <div class="tabel_container">
+        <table id="course_table">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Credits</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be added here -->
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="result"></div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
